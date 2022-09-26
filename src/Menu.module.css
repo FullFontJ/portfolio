@@ -1,0 +1,27 @@
+.NavHeder{
+    width: 100%;
+}
+
+.NavMenu{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 30px;
+}
+
+.textBotton{
+    font-size: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+    
+    cursor: pointer;
+}
+
+.textBotton > a{
+    text-shadow: -3px 1px var(--color-ligth-blue);
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid var(--color-secundary);
+    border-radius: 20px;
+}

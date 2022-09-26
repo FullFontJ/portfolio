@@ -1,0 +1,103 @@
+.Container {
+  width: 100%;
+  height: 450px;
+  background-color: var(--color-secundary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius:18% 16% 24% 27% / 100% 100% 100% 100%  ;
+  margin-bottom: 40px;
+}
+
+.Container > h2 {
+    font-size: 36px;
+}
+
+.ExpeMeter {
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+}
+
+.ExpeLevel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ExpeLevel > p {
+  font-size: 15px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.Level {
+  width: 85px;
+  height: 10px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.Skills {
+  width: calc(90px * 4);
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.BarSkill {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  flex-direction: column;
+}
+
+.BarSkill > label {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.BarSkill > div {
+  width: 100%;
+  height: 20px;
+  border-radius: 20px;
+  border: 1px solid #000;
+  background-color: var(--color-ligth-blue);
+}
+
+.BarNivel {
+  height: 90%;
+  border-radius: 20px;
+  border: 1px solid var(--color-secundary);
+  background-color: var(--color-main-backgroup);
+  animation: prog 1s linear;
+}
+
+.BarNivelOne {
+  width: 25%;
+}
+
+.BarNivelTwo {
+  width: 50%;
+}
+
+.BarNivelThree {
+  width: 75%;
+}
+
+.BarNivelFour {
+  width: 100%;
+}
+
+@keyframes prog {
+  0% {
+    width: 0%;
+    background-color: #f1f1f1;
+  }
+  100% {
+    color: #000;
+  }
+}
